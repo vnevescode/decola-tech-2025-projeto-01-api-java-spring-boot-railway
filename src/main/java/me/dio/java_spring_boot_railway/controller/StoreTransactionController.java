@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/store-transactions")
+@RequestMapping("/v1/store-transactions")
 public class StoreTransactionController {
     private final Logger logger = LoggerFactory.getLogger(StoreTransactionController.class);
     private final StoreTransactionService storeTransactionService;

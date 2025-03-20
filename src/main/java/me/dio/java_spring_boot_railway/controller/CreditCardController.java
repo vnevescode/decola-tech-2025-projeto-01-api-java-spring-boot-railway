@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/credit-cards")
+@RequestMapping("/v1/credit-cards")
 public class CreditCardController {
     private final CreditCardService creditCardService;
     private final Logger logger = LoggerFactory.getLogger(CreditCardController.class);

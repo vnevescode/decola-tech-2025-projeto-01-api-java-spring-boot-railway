@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/features")
+@RequestMapping("/v1/features")
 public class FeatureController {
 
     private final Logger logger = LoggerFactory.getLogger(FeatureController.class);
