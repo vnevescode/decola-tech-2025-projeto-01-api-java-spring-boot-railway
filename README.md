@@ -29,8 +29,6 @@ Este repositório contém o código-fonte do primeiro projeto do DIO Decola Tech
 
 ### ✅ **Qualidade e Segurança**
 - **Flyway**: Ferramenta para **controle de versionamento do banco de dados**, garantindo que as **migrations** sejam aplicadas corretamente.
-- **Spring Security (futuro)**: Planejado para implementar **autenticação e autorização** de forma segura.
-- **Testes Unitários & Integração**: A implementação de testes automatizados ajudará a **garantir a qualidade do código e prevenir falhas**.
 
 ---
 
