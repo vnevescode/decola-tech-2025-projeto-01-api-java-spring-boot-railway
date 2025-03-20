@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/rentals")
+@RequestMapping("/v1/rentals")
 public class RentalController {
     private final Logger logger = LoggerFactory.getLogger(RentalController.class);
     private final RentalService rentalService;
