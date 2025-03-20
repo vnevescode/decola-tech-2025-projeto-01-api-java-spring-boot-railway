@@ -1,5 +1,7 @@
 server:
   port: ${PORT:8082}
+  servlet:
+      context-path: /v1
 
 spring:
   datasource:
@@ -11,4 +13,6 @@ spring:
     open-in-view: false
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
-      ddl-auto: validate
+      ddl-auto: none
+  flyway:
+      enabled: false
