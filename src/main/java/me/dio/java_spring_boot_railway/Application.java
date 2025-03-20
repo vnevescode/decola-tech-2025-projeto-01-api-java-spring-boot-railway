@@ -26,7 +26,7 @@ public class Application {
 						.version("1.0")
 						.description("API Documentation for Car Rental Application"));
 	}
-
+	/**
 	@PostConstruct
 	public void printEnvironmentVariables() {
 		System.out.println("\n==== ENVIRONMENT VARIABLES ====");
@@ -49,6 +49,6 @@ public class Application {
 		}
 
 		System.out.println("================================\n");
-	}
+	} **/
 
 }

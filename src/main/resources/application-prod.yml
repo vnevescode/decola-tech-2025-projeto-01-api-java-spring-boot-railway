@@ -1,7 +1,17 @@
 server:
   port: ${PORT:8082}
-  servlet:
-      context-path: /v1
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v1/api-docs/swagger-config
+    urls:
+      - name: API Documentation
+        url: /v1/api-docs
 
 spring:
   datasource:
