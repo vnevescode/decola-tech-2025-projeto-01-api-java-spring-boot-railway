@@ -1,16 +1,24 @@
 server:
   port: ${PORT:8082}
+  servlet:
+      context-path: /v1
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
 
 spring:
   datasource:
-    url: jdbc:h2:mem:sdw2023
-    username: sdw2023
-    password:
+    url: jdbc:h2:mem:diodecolatech2025
+    username: diodecolatech2025
+    password: 123456
   jpa:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate # Usar validate para o Flyway gerenciar as migrations
     properties:
       hibernate:
         format_sql: true
@@ -21,3 +29,6 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+  flyway:
+      enabled: true
+      baseline-on-migrate: true
